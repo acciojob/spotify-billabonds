@@ -235,12 +235,12 @@ public class SpotifyRepository {
             if(playlistTitle.equals(st.getTitle()))
                 playlist = st;
                 break;
-0        }
+       }
 
         if(playlist == null)
             throw new Exception("Playlist does not exist");
 
-        playlist = new ArrayList<>();
+//        playlist = new ArrayList<>();
 
         User user = null;
         for(User st : users){
@@ -265,6 +265,8 @@ public class SpotifyRepository {
         //If the song does not exist, throw "Song does not exist" exception
         //Return the song after updating
 
+        Song song = null;
+        return song;
 
     }
 
