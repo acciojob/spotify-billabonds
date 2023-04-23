@@ -41,10 +41,10 @@ public class SpotifyRepository {
     {
         //create the user with given name and number
 
-        for(User st : users){
-            if(mobile.equals(st.getMobile()))
-                return st;
-        }
+//        for(User st : users){
+//            if(mobile.equals(st.getMobile()))
+//                return st;
+//        }
 
         User user = new User(name,mobile);
         users.add(user);
@@ -58,10 +58,10 @@ public class SpotifyRepository {
     {
         //create the artist with given name
 
-        for(Artist st : artists){
-            if(name.equals(st.getName()))
-                return st;
-        }
+//        for(Artist st : artists){
+//            if(name.equals(st.getName()))
+//                return st;
+//        }
 
         Artist artist = new Artist(name);
         artists.add(artist);
@@ -146,8 +146,8 @@ public class SpotifyRepository {
 
     public User checkIfUserExists(String mobile){
 
-        for(User user : users){
-
+        for(User user : users)
+        {
             if(user.getMobile().equals(mobile))
                 return user;
         }
