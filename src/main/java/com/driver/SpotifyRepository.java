@@ -277,7 +277,7 @@ public class SpotifyRepository {
         return playlist;
     }
 
-    public Song likeSong(String mobile, String songTitle) throws Exception                         // 8th API - Pending (Working)
+    public Song likeSong(String mobile, String songTitle) throws Exception                         // 8th API - done
     {
         // 1. The user likes the given song. The corresponding artist of the song gets auto-liked
         // 2. A song can be liked by a user only once. If a user tried to like a song multiple times, do nothing
