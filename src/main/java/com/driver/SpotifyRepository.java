@@ -41,10 +41,10 @@ public class SpotifyRepository {
     {
         //create the user with given name and number
 
-//        for(User st : users){
-//            if(mobile.equals(st.getMobile()))
-//                return st;
-//        }
+        for(User st : users){
+            if(mobile.equals(st.getMobile()))
+                return st;
+        }
 
         User user = new User(name,mobile);
         users.add(user);
@@ -88,8 +88,9 @@ public class SpotifyRepository {
 
         Artist artist = checkIfArtistExists(artistName);
 
-        if(artist == null)
+        if(artist == null) {
             artist = createArtist(artistName);
+        }
 
         Album album = new Album(title);
         albums.add(album);
@@ -182,6 +183,7 @@ public class SpotifyRepository {
         playlists.add(playlist);
         return playlist;
     }
+
     // ---------------------------------------------------------------------------------
 
 
