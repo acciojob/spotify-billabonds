@@ -58,10 +58,10 @@ public class SpotifyRepository {
     {
         //create the artist with given name
 
-//        for(Artist st : artists){
-//            if(name.equals(st.getName()))
-//                return st;
-//        }
+        for(Artist st : artists){
+            if(name.equals(st.getName()))
+                return st;
+        }
 
         Artist artist = new Artist(name);
         artists.add(artist);
@@ -354,7 +354,7 @@ public class SpotifyRepository {
         {
             if(!songLikeMap.get(song).contains(user))
             {
-                songLikeMap.get(song).contains(user);
+                songLikeMap.get(song).add(user);
                 songLikes = song.getLikes() + 1;
                 artistLikes = artist.getLikes() + 1;
                 song.setLikes(songLikes);
